@@ -2,14 +2,14 @@ import type { DevicesConfig } from "@/types/devicesConfig";
 import { withUserConfig } from "../utils/config-overlay.ts";
 
 /**
- * 设备展示页行为与展示配置。
+ * 璁惧灞曠ず椤佃涓轰笌灞曠ず閰嶇疆銆?
  *
- * 遵循「配置管行为，数据管内容」原则：
- * - enable：页面总开关；false 时导航入口同步隐藏，访问 /devices/ 跳转 404；
- * - categories：场景分类清单（数组顺序即页面顶部 Chips 顺序）；
- * - disabledIds：可选被禁用的设备 ID 列表；
+ * 閬靛惊銆岄厤缃琛屼负锛屾暟鎹鍐呭銆嶅師鍒欙細
+ * - enable锛氶〉闈㈡€诲紑鍏筹紱false 鏃跺鑸叆鍙ｅ悓姝ラ殣钘忥紝璁块棶 /devices/ 璺宠浆 404锛?
+ * - categories锛氬満鏅垎绫绘竻鍗曪紙鏁扮粍椤哄簭鍗抽〉闈㈤《閮?Chips 椤哄簭锛夛紱
+ * - disabledIds锛氬彲閫夎绂佺敤鐨勮澶?ID 鍒楄〃锛?
  *
- * 注：设备的具体清单数据（设备名、品牌、规格、感受说明、图片等）请在 `src/data/devices.ts` 中维护。
+ * 娉細璁惧鐨勫叿浣撴竻鍗曟暟鎹紙璁惧鍚嶃€佸搧鐗屻€佽鏍笺€佹劅鍙楄鏄庛€佸浘鐗囩瓑锛夎鍦?`src/data/devices.ts` 涓淮鎶ゃ€?
  */
 export const devicesConfig: DevicesConfig = withUserConfig("devices", {
 	enable: true,

@@ -17,12 +17,12 @@ export const articleConfig: ArticleConfig = withUserConfig("article", {
 		related: {
 			// 只展示至少共享一个标签或分类的文章。
 			enable: true,
-			count: 3,
+			count: 5,
 		},
 		random: {
 			// 按当前文章标识稳定抽样；同一构建中的结果不会随刷新变化。
 			enable: true,
-			count: 2,
+			count: 5,
 		},
 	},
 	share: {

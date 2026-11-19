@@ -2,14 +2,14 @@ import type { SkillsConfig } from "@/types/skillsConfig";
 import { withUserConfig } from "../utils/config-overlay.ts";
 
 /**
- * 技能页行为与展示配置。
+ * 鎶€鑳介〉琛屼负涓庡睍绀洪厤缃€?
  *
- * 遵循「配置管行为，数据管内容」原则：
- * - enable：页面总开关；false 时导航入口同步隐藏，访问 /skills/ 跳转 404；
- * - categories：筛选分类清单（数组顺序即页面顶部 Chips 顺序）；
- * - disabledNames：可选被禁用的技能名称列表（例如 ["PHP"]）；
+ * 閬靛惊銆岄厤缃琛屼负锛屾暟鎹鍐呭銆嶅師鍒欙細
+ * - enable锛氶〉闈㈡€诲紑鍏筹紱false 鏃跺鑸叆鍙ｅ悓姝ラ殣钘忥紝璁块棶 /skills/ 璺宠浆 404锛?
+ * - categories锛氱瓫閫夊垎绫绘竻鍗曪紙鏁扮粍椤哄簭鍗抽〉闈㈤《閮?Chips 椤哄簭锛夛紱
+ * - disabledNames锛氬彲閫夎绂佺敤鐨勬妧鑳藉悕绉板垪琛紙渚嬪 ["PHP"]锛夛紱
  *
- * 注：技能的具体内容数据（技能名称、熟练度等级、图标、描述等）请在 `src/data/skills.ts` 中维护。
+ * 娉細鎶€鑳界殑鍏蜂綋鍐呭鏁版嵁锛堟妧鑳藉悕绉般€佺啛缁冨害绛夌骇銆佸浘鏍囥€佹弿杩扮瓑锛夎鍦?`src/data/skills.ts` 涓淮鎶ゃ€?
  */
 export const skillsConfig: SkillsConfig = withUserConfig("skills", {
 	enable: true,

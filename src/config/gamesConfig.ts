@@ -2,15 +2,15 @@ import type { GamesConfig } from "@/types/gamesConfig";
 import { withUserConfig } from "../utils/config-overlay.ts";
 
 /**
- * 游戏展示页行为与展示配置。
+ * 娓告垙灞曠ず椤佃涓轰笌灞曠ず閰嶇疆銆?
  *
- * 遵循「配置管行为，数据管内容」原则：
- * - enable：页面总开关；false 时导航入口同步隐藏，访问 /games/ 跳转 404；
- * - categories：游戏分类清单（数组顺序即页面顶部 Chips 顺序；
- *   没有任何条目的分类会自动隐藏，因此可放心保留暂时用不到的分类）；
- * - disabledIds：可选被禁用的游戏 ID 列表；
+ * 閬靛惊銆岄厤缃琛屼负锛屾暟鎹鍐呭銆嶅師鍒欙細
+ * - enable锛氶〉闈㈡€诲紑鍏筹紱false 鏃跺鑸叆鍙ｅ悓姝ラ殣钘忥紝璁块棶 /games/ 璺宠浆 404锛?
+ * - categories锛氭父鎴忓垎绫绘竻鍗曪紙鏁扮粍椤哄簭鍗抽〉闈㈤《閮?Chips 椤哄簭锛?
+ *   娌℃湁浠讳綍鏉＄洰鐨勫垎绫讳細鑷姩闅愯棌锛屽洜姝ゅ彲鏀惧績淇濈暀鏆傛椂鐢ㄤ笉鍒扮殑鍒嗙被锛夛紱
+ * - disabledIds锛氬彲閫夎绂佺敤鐨勬父鎴?ID 鍒楄〃锛?
  *
- * 注：游戏的具体清单数据（游戏名、开发商、封面、评分、时长、简评等）请在 `src/data/games.ts` 中维护。
+ * 娉細娓告垙鐨勫叿浣撴竻鍗曟暟鎹紙娓告垙鍚嶃€佸紑鍙戝晢銆佸皝闈€佽瘎鍒嗐€佹椂闀裤€佺畝璇勭瓑锛夎鍦?`src/data/games.ts` 涓淮鎶ゃ€?
  */
 export const gamesConfig: GamesConfig = withUserConfig("games", {
 	enable: true,

@@ -48,9 +48,9 @@ export const animeConfig: AnimeConfig = withUserConfig("anime", {
 
 	/** 主数据源选择 */
 	source: {
-		kind: "local",
-		// provider: "bangumi",
-		// file: "bangumi.json",
+		kind: "snapshot",
+		provider: "bilibili",
+		file: "bilibili.json",
 		// fetchOnDev: true,
 	},
 
@@ -63,7 +63,7 @@ export const animeConfig: AnimeConfig = withUserConfig("anime", {
 	providers: {
 		bangumi: {
 			enable: false,
-			userId: "", // 填入你的 Bangumi 数字 UID 或公开用户名（测试可填 "sai"）
+			userId: "sai", // 填入你的 Bangumi 数字 UID 或公开用户名（测试可填 "sai"）
 			cover: {
 				mode: "remote", // "remote" 远程直链（默认，bgm.tv 无防盗链）| "local" 站内下载缓存 | "none"
 			},
@@ -74,8 +74,8 @@ export const animeConfig: AnimeConfig = withUserConfig("anime", {
 			},
 		},
 		bilibili: {
-			enable: false,
-			vmid: "", // 填入你的 B 站公开 UID
+			enable: true,
+			vmid: "604160647", // 填入你的 B 站公开 UID
 			sessdataEnv: "BILI_SESSDATA",
 			cover: {
 				mode: "local", // "local" 站内下载缓存（推荐）| "remote" 远程链接 | "none"

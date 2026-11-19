@@ -2,15 +2,15 @@ import type { TimelineConfig } from "@/types/timelineConfig";
 import { withUserConfig } from "../utils/config-overlay.ts";
 
 /**
- * 时间线页行为与展示配置。
+ * 鏃堕棿绾块〉琛屼负涓庡睍绀洪厤缃€?
  *
- * 遵循「配置管行为，数据管内容」原则：
- * - enable：页面总开关；false 时导航入口同步隐藏，访问 /timeline/ 跳转 404；
- * - categories：筛选分类清单（数组顺序即页面顶部 Chips 顺序）；
- * - order：排序方向，默认为 "desc"（时间倒序，最新在前）；可选 "asc"（正序）；
- * - disabledTitles：可选被禁用的事件标题列表；
+ * 閬靛惊銆岄厤缃琛屼负锛屾暟鎹鍐呭銆嶅師鍒欙細
+ * - enable锛氶〉闈㈡€诲紑鍏筹紱false 鏃跺鑸叆鍙ｅ悓姝ラ殣钘忥紝璁块棶 /timeline/ 璺宠浆 404锛?
+ * - categories锛氱瓫閫夊垎绫绘竻鍗曪紙鏁扮粍椤哄簭鍗抽〉闈㈤《閮?Chips 椤哄簭锛夛紱
+ * - order锛氭帓搴忔柟鍚戯紝榛樿涓?"desc"锛堟椂闂村€掑簭锛屾渶鏂板湪鍓嶏級锛涘彲閫?"asc"锛堟搴忥級锛?
+ * - disabledTitles锛氬彲閫夎绂佺敤鐨勪簨浠舵爣棰樺垪琛紱
  *
- * 注：时间线的具体节点数据（标题、日期、经历描述、要点列表、关联链接等）请在 `src/data/timeline.ts` 中维护。
+ * 娉細鏃堕棿绾跨殑鍏蜂綋鑺傜偣鏁版嵁锛堟爣棰樸€佹棩鏈熴€佺粡鍘嗘弿杩般€佽鐐瑰垪琛ㄣ€佸叧鑱旈摼鎺ョ瓑锛夎鍦?`src/data/timeline.ts` 涓淮鎶ゃ€?
  */
 export const timelineConfig: TimelineConfig = withUserConfig("timeline", {
 	enable: true,
