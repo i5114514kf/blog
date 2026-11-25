@@ -15,7 +15,16 @@ export interface FriendItem {
 }
 
 // 友情链接数据（示例数据已清空，按需补充）
-export const friendsData: FriendItem[] = [];
+export const friendsData: FriendItem[] = [
+	{
+		id: 1,
+		title: "Rb9-1376 的博客",
+		imgurl: "https://www.691376.xyz/_astro/mine.oIz_fWJ__UrtsK.webp",
+		desc: "让科学再次伟大",
+		siteurl: "https://www.691376.xyz",
+		tags: ["博客"],
+	},
+];
 
 // 获取所有友情链接数据（稳定顺序，测试可复现）
 export function getFriendsList(): FriendItem[] {
